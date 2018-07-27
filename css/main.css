@@ -56,6 +56,10 @@ section h1{
   .iti-flag {background-image: url("../intl-telephone/build/img/flags@2x.png");}
 }
 
+#imgwrap{
+  display: initial;
+}
+
 #phone, select {
   border: 1px solid #CCC;
   width: 45vw;
@@ -298,4 +302,91 @@ a:any-link{
   align-self: center;
 }
 
-@media and 
+#section{
+  display: none;
+}
+
+@media screen and (max-width: 600px){
+  #phone{
+    width: 100vw;
+  }
+  #alignpara{
+    margin: 0;
+  }
+  #imgwrap{
+    display: none;  
+  }
+  #section2::before{
+    content: url(../images/900x1600.png);
+    max-height: 100vh;
+    width:auto;
+    display: inherit;
+  }
+  #mobimg{
+    max-height: 100vh;
+    width: auto;
+  }
+
+  #section2 p{
+    margin-left: 15%;
+  }
+  #section2 #oed::before{
+    content: "";
+    position: absolute;
+    left: -12%;
+    bottom: 15px;
+    background-image: url("../images/index.ico");
+    background-size: 40px 40px;
+    min-height: 40px;
+    min-width: 40px;
+    display: inline-block;
+    align-self: center;
+    margin-right: 1%;
+
+  }
+
+  #section2 #wikipedia::before{
+    content: "";
+    position: absolute;
+    left: -12%;
+    bottom: 15px;
+    background-image: url("../images/wikipedia.png");
+    background-size: 40px 40px;
+    min-height: 40px;
+    min-width: 40px;
+    display: inline-block;
+    align-self: center;
+    margin-right: 1%;
+
+  }
+
+  #section2 #googletrans::before{
+    content: "";
+    position: absolute;
+    left: -12%;
+    bottom: 15px;
+    background-image: url("../images/Google_Translate_logo.svg.png");
+    background-size: 40px 40px;
+    min-height: 40px;
+    min-width: 40px;
+    display: inline-block;
+    align-self: center;
+    margin-right: 1%;
+
+  }
+
+  #section2 #news::before{
+    content: "";
+    position: absolute;
+    left: -12%;
+    bottom: 30%;
+    background-image: url("../images/newsapi.png");
+    background-size: 40px 40px;
+    min-height: 40px;
+    min-width: 40px;
+    display: inline-block;
+    align-self: center;
+    margin-right: 1%;
+  }
+  
+}
