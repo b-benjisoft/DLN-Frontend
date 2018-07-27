@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div id="imgwrap">
-                            <img src="images/900x1600.png" id="phoneimg" />
+                            <video id="myVideo" class="phoneimg" autoplay></video>
                         </div>
                     </div>
                     
@@ -66,6 +66,22 @@
             
 
         });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@0.8.2"></script>
+    <script>
+      (function(){
+        // Replace with your asset's playback ID
+        var playbackId = "tGUqKag02RSy1oDRDosWQlUFG1qxPgH02V";
+        var url = "https://stream.mux.com/"+playbackId+".m3u8";
+    
+        // HLS.js-specific setup code
+        if (Hls.isSupported()) {
+          var video = document.getElementById("myVideo");
+          var hls = new Hls();
+          hls.loadSource(url);
+          hls.attachMedia(video);
+        }
+      })();
     </script>
 </body>
 </html>

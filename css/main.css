@@ -84,7 +84,7 @@ input, button{
   margin: auto;
 }*/
 
-#phoneimg{
+.phoneimg{
   max-height: 60vh;
   width: auto;
   margin-top: 2%;
@@ -313,18 +313,23 @@ a:any-link{
   #alignpara{
     margin: 0;
   }
-  #imgwrap{
-    display: none;  
-  }
-  #section2::before{
-    content: url(../images/900x1600.png);
-    max-height: 100vh;
+  .phoneimg{
+    min-height: 100vh;
     width:auto;
-    display: inherit;
+    display: block;
+    margin: 2% auto
   }
   #mobimg{
     max-height: 100vh;
     width: auto;
+  }
+
+  section{
+    max-height: 200vh;
+  }
+
+  #section1{
+    height: 150vh;
   }
 
   #section2 p{
