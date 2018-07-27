@@ -186,6 +186,7 @@ Plugin.prototype = {
         return lowerCaseExcludeCountries.indexOf(country.iso2) === -1;
       });
     } else {
+      allCountries = undefined;
       this.countries = allCountries;
     }
   },

@@ -7,38 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/onepage-scroll.css" />
-    <link rel="stylesheet" href="src/css/intlTelInput.scss">
+    <link rel="stylesheet" href="intl-telephone/build/css/intlTelInput.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 </head>
 <body>
     <div class="wrapper">
         <div class = "main">
             <section id = "section1">
-                <div>
-                    <div>
-                        <h1>Dataless <h1>Net</h1></h1>
-                        <h2>Making the internet accessible for everyone, everywhere.</h2>
+                <div id = "content">
+                    <div id="textwrap">
+                        <div id = "centralise">
+                            <div id="aligntitle">
+                                <h1>Dataless Net</h1>
+                                <h2>Making the internet accessible for everyone, everywhere.</h2>
+                            </div>
+                                <div id="alignpara">
+                                    <input type="tel" id="phone">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, ut eos dicta noluisse, vim impetus aliquid facilisi an, quis eleifend pri ut. In fugit omnium sea, et quo vide recteque theophrastus, no ius eirmod tamquam. Posidonium dissentiunt no mei, ad dolorum maiorum verterem eam, ex aeque melius bonorum nec. Graeci oportere corrumpit in vel, sea id dicat malorum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <input type="tel" id="phone">
-                    </div>
-                    
-                </div>
                 
             </section>
             <section id = "section2">
-                <h1>Test</h1>
+                <details>
+                    <summary>Question 1</summary>
+                    <p>Lorem ipsum dolor sit amet, ut eos dicta noluisse, vim impetus aliquid facilisi an, quis eleifend pri ut. In fugit omnium sea, et quo vide recteque theophrastus, no ius eirmod tamquam. Posidonium dissentiunt no mei, ad dolorum maiorum verterem eam, ex aeque melius bonorum nec. Graeci oportere corrumpit in vel, sea id dicat malorum.</p>
+                </details>
+                <details>
+                    <summary>Question 2</summary>
+                    <p>Lorem ipsum dolor sit amet, ut eos dicta noluisse, vim impetus aliquid facilisi an, quis eleifend pri ut. In fugit omnium sea, et quo vide recteque theophrastus, no ius eirmod tamquam. Posidonium dissentiunt no mei, ad dolorum maiorum verterem eam, ex aeque melius bonorum nec. Graeci oportere corrumpit in vel, sea id dicat malorum.</p>
+                </details>
+                <details>
+                    <summary>Question 3</summary>
+                    <p>Lorem ipsum dolor sit amet, ut eos dicta noluisse, vim impetus aliquid facilisi an, quis eleifend pri ut. In fugit omnium sea, et quo vide recteque theophrastus, no ius eirmod tamquam. Posidonium dissentiunt no mei, ad dolorum maiorum verterem eam, ex aeque melius bonorum nec. Graeci oportere corrumpit in vel, sea id dicat malorum.</p>
+                </details>
+                <details>
+                        <summary>Question 4</summary>
+                        <p>Lorem ipsum dolor sit amet, ut eos dicta noluisse, vim impetus aliquid facilisi an, quis eleifend pri ut. In fugit omnium sea, et quo vide recteque theophrastus, no ius eirmod tamquam. Posidonium dissentiunt no mei, ad dolorum maiorum verterem eam, ex aeque melius bonorum nec. Graeci oportere corrumpit in vel, sea id dicat malorum.</p>
+                </details>
+                <details>
+                        <summary>Question 5</summary>
+                        <p>Lorem ipsum dolor sit amet, ut eos dicta noluisse, vim impetus aliquid facilisi an, quis eleifend pri ut. In fugit omnium sea, et quo vide recteque theophrastus, no ius eirmod tamquam. Posidonium dissentiunt no mei, ad dolorum maiorum verterem eam, ex aeque melius bonorum nec. Graeci oportere corrumpit in vel, sea id dicat malorum.</p>
+                </details>
+                <details>
+                        <summary>Question 6</summary>
+                        <p>Lorem ipsum dolor sit amet, ut eos dicta noluisse, vim impetus aliquid facilisi an, quis eleifend pri ut. In fugit omnium sea, et quo vide recteque theophrastus, no ius eirmod tamquam. Posidonium dissentiunt no mei, ad dolorum maiorum verterem eam, ex aeque melius bonorum nec. Graeci oportere corrumpit in vel, sea id dicat malorum.</p>
+                </details>
             </section>
         </div>
     </div>
     <script src="js/onepagescroll.js"></script>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="src/js/intlTelInput.js"></script>
+    <script src="intl-telephone/build/js/intlTelInput.js"></script>
     <script>
         $("#phone").intlTelInput({
-            allowDropdown:true,
-            utilsScript:"build/js/utils.js",
-            allCountries:true
+            utilsScript:"intl-telephone/build/js/utils.js",
+            
 
         });
     </script>
