@@ -43,19 +43,11 @@ section{
 section h1{
   align-content: center;
   font-family: 'Josefin Sans', sans-serif;
-  font-display: bold;
+  font-weight: bold;
 }
 
 #section2{
-  background: url("../images/page2.jpg");
-
-  /* Full height*/ 
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #133046;
 }
 
 .iti-flag {background-image: url("../intl-telephone/build/img/flags.png");}
@@ -168,11 +160,6 @@ input, button{
   font-family: 'Josefin Sans', sans-serif;
 }
 
-#section2{
-  display: flex;
-  flex-direction: column;
-}
-
 details{
   min-width: 100%;
   font-size: 20pt;
@@ -226,3 +213,89 @@ summary{
   max-width: 100vw;
   
 }
+
+#section2{
+  flex-direction: column;
+  color: azure;
+}
+
+#section2 h1{
+  align-content: center;
+  text-align: center;
+  font-size: 50pt;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: bold;
+  min-width: 100vw;
+}
+
+#section2 p{
+  font-size: 1.5em;
+  font-family: "Josefin sans", sans-serif;
+  text-align: left;
+  margin-left: 10%;
+  position: relative;
+  font-weight: lighter;
+}
+
+#section2 #news::before{
+  content: "";
+  position: absolute;
+  left: -5%;
+  bottom: -5px;
+  background-image: url("../images/newsapi.png");
+  background-size: 40px 40px;
+  min-height: 40px;
+  min-width: 40px;
+  display: inline-block;
+  align-self: center;
+}
+
+a:any-link{
+  color: #f3418d;
+  text-decoration: none;
+}
+
+#section2 #wikipedia::before{
+  content: "";
+  position: absolute;
+  left: -5%;
+  bottom: -5px;
+  background-image: url("../images/wikipedia.png");
+  background-size: 40px 40px;
+  min-height: 40px;
+  min-width: 40px;
+  display: inline-block;
+  align-self: center;
+}
+
+#section2 #googletrans::before{
+  content: "";
+  position: absolute;
+  left: -5%;
+  bottom: -5px;
+  background-image: url("../images/Google_Translate_logo.svg.png");
+  background-size: 40px 40px;
+  min-height: 40px;
+  min-width: 40px;
+  display: inline-block;
+  align-self: center;
+}
+
+#mobile1{
+  display: none;
+}
+
+#section2 #oed::before{
+  content: "";
+  position: absolute;
+  left: -5%;
+  bottom: -5px;
+  background-image: url("../images/index.ico");
+  background-size: 40px 40px;
+  min-height: 40px;
+  min-width: 40px;
+  display: inline-block;
+  align-self: center;
+}
+
+@media and 
