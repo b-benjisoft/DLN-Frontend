@@ -85,9 +85,8 @@ input, button{
 }*/
 
 #phoneimg{
-  max-height: 60vh;
+  max-height: 70vh;
   width: auto;
-  margin-top: 2%;
 }
 
 
@@ -317,7 +316,7 @@ a:any-link{
     display: none;  
   }
   #section2::before{
-    content: url(../images/900x1600.png);
+    content: url(../images/messages.gif);
     max-height: 100vh;
     width:auto;
     display: inherit;
