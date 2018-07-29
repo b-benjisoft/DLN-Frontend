@@ -18,7 +18,7 @@ We had an issue with one of the companies claiming that we didn't pay them even 
 ## Accomplishments that we're proud of
 Working Lambda backend
 Working Nexmo messages
-Learning javascript on the fly (With the exception of Bemmons)
+Learning javascript on the fly (With the exception of Ben)
 
 ## What we learned
 Companies do not always play ball and that can delay things, by a lot!
