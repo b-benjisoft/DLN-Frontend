@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dataless net</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/onepage-scroll.css" />
+    <link rel="stylesheet" href="intl-telephone/build/css/intlTelInput.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class = "main">
+            <section id = "section1">
+                <div id = "content">
+                    <div id="textwrap">
+                        <div id = "centralise">
+                            <div id="aligntitle">
+                                <h1>DATALESS <b>NETWORK</b></h1>
+                                <h2>MAKING THE INTERNET ACCESIBLE FOR EVERYONE, EVERYWHERE.</h2>
+                            </div>
+                                <div id="alignpara">
+                                    <input type="tel" id="phone">
+                                    <input type="button" onchange="runScript()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                
+            </section>
+            <section id = "section2">
+                    <h1>ABOUT</h1>
+                    <p id="news">
+                        <b><a href="http://newsapi.org">Newsapi</a> </b> is used in the instance that a customer would like a summary of the current world news.
+                    </p>
+                    <p id="wikipedia">
+                        <b><a href="http://wikipedia.org">Wikipedia</a></b> is for general information lookup using their summary apis.
+                    </p>
+                    <p id="googletrans">
+                        <b><a href="http://translate.google.com">Translate</a></b> to allow for quick translation over slower networks.
+                    </p>
+                    <p id="oed">
+                        <b><a href="https://developer.oxforddictionaries.com/">Oxford Dictionary</a></b> for word definitions on the fly.
+                    </p>
+            </section>
+            <!--<section id = "section3">
+                <h1>FAQ</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, ut mutat accumsan inciderint per, an mea saperet phaedrum vituperata. Mel ei oratio fabellas. Elit appellantur intellegebat mei ne, est at sumo epicuri. Per quod legere sententiae no, quot tacimates necessitatibus eu nam. Ornatus ocurreret dissentiunt ad eos. Ut virtute explicari prodesset per.
+                </p>
+            </section>-->
+        </div>
+    </div>
+    <script src="js/onepagescroll.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="intl-telephone/build/js/intlTelInput.js"></script>
+    <script>
+        $("#phone").intlTelInput({
+            utilsScript:"intl-telephone/build/js/utils.js",
+            
+
+        });
+    </script>
+    <script src="js/firebase.js"></script>
+</body>
+</html>
