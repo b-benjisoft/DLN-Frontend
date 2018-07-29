@@ -84,10 +84,10 @@ input, button{
   margin: auto;
 }*/
 
-
-#phoneimg{
-  max-height: 70vh;
+.phoneimg{
+  max-height: 60vh;
   width: auto;
+  margin-top: 2%;
 }
 
 
@@ -104,16 +104,6 @@ input, button{
 }
 #content{
   min-width: 100%;
-  position: relative;
-}
-
-#content::after{
-  content: url(../images/angle-double-down-solid.svg);
-  width: 30px;
-  height: auto;
-  position: absolute;
-  right: 2%;
-  bottom: 2%;
 }
 
 #textwrap h2{
@@ -323,13 +313,23 @@ a:any-link{
   #alignpara{
     margin: 0;
   }
-
-  #imgwrap{
-    display: none;  
+  .phoneimg{
+    min-height: 100vh;
+    width:auto;
+    display: block;
+    margin: 2% auto
   }
   #mobimg{
     max-height: 100vh;
     width: auto;
+  }
+
+  section{
+    max-height: 200vh;
+  }
+
+  #section1{
+    height: 160vh;
   }
 
   #section2 p{

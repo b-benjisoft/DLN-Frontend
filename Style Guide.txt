@@ -1,0 +1,16 @@
+Fonts:
+	Josefin Sans
+		Styles:
+			Light
+			Thin
+		No use of italics or bold.
+
+Colours:
+	Important Elements:
+		Pink   (#f3418d)
+
+	Regular Elements:
+		Black (#000000)
+	
+	Lesser Elements:
+		Grey  (#bcbcbc)
