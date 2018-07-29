@@ -1,3 +1,5 @@
+# Dataless Network
+
 ## Inspiration
 Many people have limited access to the internet due to their rural location, lack of infrastructure, financial constraints, and even governmental censorship.
 Dataless Network was founded to provide an alternative; by utilising SMS - a network usually far more available both geographically and financially than 3G/4G, internet traffic can be requested and return all via standard text messages.
