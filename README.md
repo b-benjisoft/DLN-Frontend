@@ -1,11 +1,8 @@
-# DLN-Frontend
-## Includes
-https://github.com/jackocnr/intl-tel-input
+# Dataless Network
+
 
 ## What is this?
-This is a frontend for https://dataless.network
-We have an FAQ on the site *
+Dataless Network is a thing. [Bemmons could you add some stuff here please]
 
-
-*site coming soon
-
+## Includes
+https://github.com/jackocnr/intl-tel-input
