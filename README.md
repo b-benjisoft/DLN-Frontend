@@ -13,7 +13,7 @@ DLN uses SMS to send information from the internet for a very low cost.
 We used Lambda in order to simplify the infrastructure as well as Nexmo for sending and receiving messages. For the information, we linked into a multitude of APIs. Including the Oxford English Dictionary, Google Translate and Wikipedia. 
 
 ## Challenges we ran into
-Nexmo was a pain and a half to use. Especially seeing as they claimed that we didn't pay them even though we were charged. 
+We had an issue with one of the companies claiming that we didn't pay them even though we were charged. 
 
 ## Accomplishments that we're proud of
 Working Lambda backend
