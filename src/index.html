@@ -3,89 +3,49 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dataless net</title>
+    <title>Dataless Network</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/onepage-scroll.css" />
-    <link rel="stylesheet" href="intl-telephone/build/css/intlTelInput.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../Graphics/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../Graphics/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../Graphics/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../Graphics/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../Graphics/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../Graphics/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../Graphics/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../Graphics/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../Graphics/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../Graphics/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../Graphics/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../Graphics/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../Graphics/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Dataless Network"/>
+    <meta name="msapplication-TileColor" content="#133046" />
+    <meta name="msapplication-TileImage" content="../Graphics/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../Graphics/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../Graphics/faviconsmstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../Graphics/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../Graphics/favicons/mstile-310x310.png" />
+
 </head>
 <body>
-    <div class="wrapper">
-        <div class = "main">
-            <section id = "section1">
-                <div id = "content">
-                    <div id="textwrap">
-                        <div id = "centralise">
-                            <div id="aligntitle">
-                                <h1>DATALESS <b>NETWORK</b></h1>
-                                <h2>MAKING THE INTERNET ACCESIBLE FOR EVERYONE, EVERYWHERE.</h2>
-                            </div>
-                                <div id="alignpara">
-                                    <input type="tel" id="phone">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="imgwrap">
-<<<<<<< HEAD
-                            <img src="images/texts.gif" id="phoneimg"></img>
-=======
-                            <video id="myVideo" class="phoneimg" autoplay></video>
->>>>>>> parent of c8ae9ec... Added texts gif
-                        </div>
-                    </div>
-                    
-                    
-                
-            </section>
-            <section id = "section2">
-                    <h1>ABOUT</h1>
-                    <p id="news">
-                        <b><a href="http://newsapi.org">Newsapi</a> </b> is used in the instance that a customer would like a summary of the current world news.
-                    </p>
-                    <p id="wikipedia">
-                        <b><a href="http://wikipedia.org">Wikipedia</a></b> is for general information lookup using their summary apis.
-                    </p>
-                    <p id="googletrans">
-                        <b><a href="http://translate.google.com">Translate</a></b> to allow for quick translation over slower networks.
-                    </p>
-                    <p id="oed">
-                        <b><a href="https://developer.oxforddictionaries.com/">Oxford Dictionary</a></b> for word definitions on the fly.
-                    </p>
-            </section>
-            <!--<section id = "section3">
-                <h1>FAQ</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, ut mutat accumsan inciderint per, an mea saperet phaedrum vituperata. Mel ei oratio fabellas. Elit appellantur intellegebat mei ne, est at sumo epicuri. Per quod legere sententiae no, quot tacimates necessitatibus eu nam. Ornatus ocurreret dissentiunt ad eos. Ut virtute explicari prodesset per.
-                </p>
-            </section>-->
-        </div>
+    <div id="centered">
+        <img src="../Graphics/Logos/Logo.png" id="logo">
+        <h1>DATALESS <b>NETWORK</b></h1>
+        <h2 id="typed"></h2>
+        <input type="email" id="input">
     </div>
-    <script src="js/onepagescroll.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="intl-telephone/build/js/intlTelInput.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.2/dist/typeit.min.js"></script>
     <script>
-        $("#phone").intlTelInput({
-            utilsScript:"intl-telephone/build/js/utils.js",
-            
-
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@0.8.2"></script>
-    <script>
-      (function(){
-        // Replace with your asset's playback ID
-        var playbackId = "tGUqKag02RSy1oDRDosWQlUFG1qxPgH02V";
-        var url = "https://stream.mux.com/"+playbackId+".m3u8";
-    
-        // HLS.js-specific setup code
-        if (Hls.isSupported()) {
-          var video = document.getElementById("myVideo");
-          var hls = new Hls();
-          hls.loadSource(url);
-          hls.attachMedia(video);
-        }
-      })();
+        instance = new TypeIt('#typed',{
+            strings: ['SOMETHING IS COMING', 'PUT IN YOUR EMAIL FOR UPDATES...'],
+            speed: 100,
+            breakLines: false,
+            autoStart: false,
+            cursor: false,
+            nextStringDelay: [300, 1500]
+    })
     </script>
 </body>
 </html>
