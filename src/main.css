@@ -43,8 +43,22 @@ html{
     margin-top: 2%;
 }
 
+#mc_embed_signup_scroll #mce-EMAIL{
+    width: 45vw;
+    height: 50px;
+    font-size: 20pt;
+}
+
+#mc_embed_signup_scroll #mc-embedded-subscribe{
+    height: 50px;
+}
+
+form{
+    height: 50px;
+}
+
 @media screen and (max-width: 600px){
-    #input{
-        width: 90vw;
+    #mc_embed_signup_scroll #mce-EMAIL{
+        width: 100%;
     }
 }
