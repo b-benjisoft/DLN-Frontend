@@ -57,6 +57,17 @@ form{
     height: 50px;
 }
 
+#description{
+    max-width: 45vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15pt;
+    margin: 0 auto;
+}
+
+#mc-embedded-subscribe{
+    background-color: #F3418D;
+}
+
 @media screen and (max-width: 600px){
     #mc_embed_signup_scroll #mce-EMAIL{
         width: 100%;
