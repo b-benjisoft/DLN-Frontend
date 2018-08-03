@@ -7,7 +7,7 @@ body{
 }
 
 html{
-    height: 100%;
+    min-height: 100%;
     background:linear-gradient( #4D00E1, #8B27E3 );
     background-repeat: no-repeat;
 }
@@ -61,12 +61,16 @@ form{
     max-width: 45vw;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15pt;
-    margin: 0 auto;
-    margin-top: 2%;
+    margin: 2% auto;
+    text-align: justify;
 }
 
 #mc-embedded-subscribe{
     background-color: #F3418D;
+}
+
+#enticement{
+    font-size: 15pt;
 }
 
 @media screen and (max-width: 600px){
