@@ -73,8 +73,43 @@ form{
 
 #enticement{
     font-size: 15pt;
-    color: #f3418d;
+    /*color: #f3418d;*/
 }
+
+a:-webkit-any-link {
+    color: #f3418d;
+    text-decoration: none;
+  }
+  
+  a:-moz-any-link {
+    color: #f3418d;
+    text-decoration: none;
+  }
+  
+  a:any-link {
+    color: #f3418d;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #f3418d;
+    text-decoration: none;
+  }
+  
+  a:link {
+    color: #f3418d;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #f3418d;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: #f3418d;
+    text-decoration: none;
+  }
 
 @media screen and (max-width: 600px){
     #mc_embed_signup_scroll #mce-EMAIL{
