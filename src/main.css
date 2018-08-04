@@ -45,7 +45,7 @@ html{
 }
 
 #mc_embed_signup_scroll #mce-EMAIL{
-    width: 50vw;
+    width: 30vw;
     height: 50px;
     font-size: 20pt;
 }
@@ -68,10 +68,12 @@ form{
 
 #mc-embedded-subscribe{
     background-color: #F3418D;
+    font-size: 20pt;
 }
 
 #enticement{
     font-size: 15pt;
+    color: #f3418d;
 }
 
 @media screen and (max-width: 600px){
