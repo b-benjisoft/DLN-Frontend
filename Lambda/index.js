@@ -12,7 +12,7 @@ exports.handler = (event, context, callback) => {
                      callback(error, "No input")
                  }
     slackReport.send(sms)
-    forwardQuery.sort(sms["body"]["intendedFunction"], sms["body"]["query"], sms["sender"])
+    forwardQuery.sort(sms["body"]["intendedFunction"], sms["body"]["query"], sms["sender"], context)
     var response = {
         "statusCode": 200,
         "isBase64Encoded": false
