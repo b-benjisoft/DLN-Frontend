@@ -6,7 +6,7 @@ module.exports = {send: function(response, phoneNumber, error) {
         apiSecret: "6245e4a5cf7a9299"
         }
     );
-    if (error != null){    
+    if (error == null){    
         nexmo.message.sendSms("447418342669", phoneNumber, response);
         return("Message sent successfully");
 }
