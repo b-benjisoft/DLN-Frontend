@@ -8,18 +8,14 @@ exports.handler = (event, context, callback) => {
                              "query":            rawText[1]},
                  "sender":  rawQuery["msisdn"]};
 
-                 if (rawText == null) {
+                 if (rawQuery == null) {
                      callback(error, "No input")
                  }
     slackReport.send(sms)
     forwardQuery.sort(sms["body"]["intendedFunction"], sms["body"]["query"], sms["sender"])
     var response = {
         "statusCode": 200,
-        "headers": {
-            "my_header": "my_value"
-        },
-        "body": "",
         "isBase64Encoded": false
     };
-    callback();
+    callback(null, response);
 };
