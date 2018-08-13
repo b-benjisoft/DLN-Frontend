@@ -1,14 +1,25 @@
-exports.handler = function (event, context) {
-    const Nexmo = require('nexmo')
+const slackReport = require('./slackReport');
+const forwardQuery = require('./forwardQuery')
 
-    const nexmo = new Nexmo({
-        apiKey: "c04da579",
-        apiSecret: "6245e4a5cf7a9299"
-    })
+exports.handler = (event, context, callback) => {
+    const rawQuery = event["queryStringParameters"];
+    const rawText = rawQuery["text"].toLowerCase().split(":");
+    const sms = {"body":    {"intendedFunction": rawText[0],
+                             "query":            rawText[1]},
+                 "sender":  rawQuery["msisdn"]};
 
-    const from = 'BenjiSoft'
-    const to = 447809128262
-    const text = 'A text message sent using the Nexmo SMS API'
-
-    nexmo.message.sendSms(from, to, text)
+                 if (rawText == null) {
+                     callback(error, "No input")
+                 }
+    slackReport.send(sms)
+    forwardQuery.sort(sms["body"]["intendedFunction"], sms["body"]["query"], sms["sender"])
+    var response = {
+        "statusCode": 200,
+        "headers": {
+            "my_header": "my_value"
+        },
+        "body": "",
+        "isBase64Encoded": false
+    };
+    callback();
 };

@@ -1,0 +1,54 @@
+{
+    "resource": "/Recieve",
+    "path": "/Recieve",
+    "httpMethod": "GET",
+    "headers": {
+        "Accept": "*/*",
+        "Host": "8z6xzkmkg0.execute-api.eu-west-2.amazonaws.com",
+        "User-Agent": "Nexmo/MessagingHUB/v1.0",
+        "X-Amzn-Trace-Id": "Root=1-5b6f41d0-d2334e259793a896be89338b",
+        "X-Forwarded-For": "174.36.197.202",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "queryStringParameters": {
+        "messageId": "0C000000D7E4402D",
+        "text": "Translate: Steve to French",
+        "to": "447418342669",
+        "keyword": "TEST",
+        "msisdn": "447809128262",
+        "type": "text",
+        "message-timestamp": "2018-08-11 19:31:22"
+    },
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "8qj2ga",
+        "resourcePath": "/Recieve",
+        "httpMethod": "GET",
+        "extendedRequestId": "Lec4gFSYrPEFbBg=",
+        "requestTime": "11/Aug/2018:20:06:40 +0000",
+        "path": "/default/Recieve",
+        "accountId": "472296749772",
+        "protocol": "HTTP/1.1",
+        "stage": "default",
+        "requestTimeEpoch": 1534018000090,
+        "requestId": "0f3fc479-9da2-11e8-9610-7f975a508835",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "174.36.197.202",
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "Nexmo/MessagingHUB/v1.0",
+            "user": null
+        },
+        "apiId": "8z6xzkmkg0"
+    },
+    "body": null,
+    "isBase64Encoded": false
+}
