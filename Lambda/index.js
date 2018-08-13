@@ -8,7 +8,7 @@ exports.handler = (event, context, callback) => {
                              "query":            rawText[1]},
                  "sender":  rawQuery["msisdn"]};
 
-                 if (rawText == null) {
+                 if (rawQuery == null) {
                      callback(error, "No input")
                  }
     slackReport.send(sms)
