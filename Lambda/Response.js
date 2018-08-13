@@ -8,4 +8,5 @@ module.exports = {send: function(response, phoneNumber) {
     );
     
     nexmo.message.sendSms("447418342669", phoneNumber, response);
+    return("Message sent successfully");
 }};
