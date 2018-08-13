@@ -1,0 +1,44 @@
+{
+  "name": "Dataless.Network",
+  "description": "Making the internet accesiable for everyone, everywhere. ",
+  "version": "v1.0.0",
+  "maintainers": [
+    {
+      "name": "Benji Lewis",
+      "email": "benji@benjisoft.org.uk",
+      "web": "www.benjisoft.org.uk"
+    },
+    {
+      "name": "Reilly Hewitson",
+      "email": "reilly@benjisoft.org.uk",
+      "web": "www.benjisoft.org.uk/team.php"
+    },
+    {
+      "name": "Bemmons",
+      "email": "bemmons@benjisoft.org.uk",
+      "web": "www.benfolio.online"
+    }
+  ],
+  "dependencies": {
+    "html-to-json": "^0.6.0",
+    "https://www.npmjs.com/package/twilio": "3.18.0",
+    "nexmo": "^2.3.2",
+    "node-wikipedia": "0.0.2"
+  },
+  "bugs": {
+    "web": "https://github.com/b-benjisoft/Dataless-Network/issues"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/b-benjisoft/Dataless-Network.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "All rights reserved",
+      "url": ""
+    }
+  ],
+  "homepage": "www.dataless.network"
+}
