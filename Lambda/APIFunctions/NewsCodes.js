@@ -252,7 +252,7 @@ var isoCountries = {
 };
 
 module.exports = {
-	getCountryCode = function (countryName) {
+	getCountryCode: function (countryName) {
 		if (isoCountries.hasOwnProperty(countryName)) {
 			return isoCountries[countryName];
 		} else {
