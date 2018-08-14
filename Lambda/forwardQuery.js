@@ -24,12 +24,16 @@ module.exports = {
                 let payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                     "Search Query": query}}
-                APIFunctions["Wikipedia"].getSummary(payload);}
+                APIFunctions["Wikipedia"].getSummary(payload);
+                break;
+            }
 
             case "news": {// Done Badly [Benji]
                 console.log("News Fire")
                 let payload = {"Phone Number": phoneNumber}
-                APIFunctions["News"].getNews(payload);}
+                APIFunctions["News"].getNews(payload);
+                break;
+            }
                 
             case "dictionary": {//define? Yes // To do
                 break;}
@@ -45,7 +49,9 @@ module.exports = {
                                 "Origin Station":        queryParameters[0],
                                 "Destination Station":   queryParameters[1]}}
 
-                APIFunctions["Trains"].execute(payload); }
+                APIFunctions["Trains"].execute(payload); 
+                break;
+            }
                 
             case "buses": {// To do
                 break;}
