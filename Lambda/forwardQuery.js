@@ -25,7 +25,7 @@ module.exports = {
                                     "Search Query": query}}
                 APIFunctions["Wikipedia"].execute(payload)
 
-            case "news": // To do [Benji]
+            case "news": // Done Badly [Benji]
                 var payload = {"Phone Number": phoneNumber}
                 APIFunctions["News"].execute(payload)
                 
