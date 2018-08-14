@@ -11,6 +11,7 @@ module.exports = {
     sort: function (intendedFunction, query, phoneNumber) {
         switch(intendedFunction) {
             case "translate": { // In Progress [Bemmons]
+                console.log("Translate Fire")
                 var queryParameters = query.split(" to ")
                 var payload = {"Phone Number": phoneNumber,
                                "Parameters":{
@@ -20,12 +21,14 @@ module.exports = {
                 APIFunctions["Translate"](payload); }
                 
             case "wikipedia": // Done [Bemmons]
+                console.log("Wikipedia fire")
                 var payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                     "Search Query": query}}
                 APIFunctions["Wikipedia"].execute(payload)
 
             case "news": // Done Badly [Benji]
+                console.log("News Fire")
                 var payload = {"Phone Number": phoneNumber}
                 APIFunctions["News"].execute(payload)
                 
@@ -36,6 +39,7 @@ module.exports = {
                 break;
                 
             case "trains": { // To do [Benji]
+                console.log("Trains Fire")
                 var queryParameters = query.split(" to ")
                 var payload = {"Phone Number": phoneNumber,
                                "Parameters":{
