@@ -17,19 +17,19 @@ module.exports = {
                                "Parameters":{
                                     "Untranslated Phrase":   queryParameters[0],
                                     "Target Language":       queryParameters[1]}}
-                APIFunctions["Translate"].execute(payload); }
+                APIFunctions["Translate"].getTranslation(payload); }
                 
             case "wikipedia": {// Done [Bemmons]
                 console.log("Wikipedia fire")
                 let payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                     "Search Query": query}}
-                APIFunctions["Wikipedia"].execute(payload);}
+                APIFunctions["Wikipedia"].getSummary(payload);}
 
             case "news": {// Done Badly [Benji]
                 console.log("News Fire")
                 let payload = {"Phone Number": phoneNumber}
-                APIFunctions["News"].execute(payload);}
+                APIFunctions["News"].getNews(payload);}
                 
             case "dictionary": {//define? Yes // To do
                 break;}
