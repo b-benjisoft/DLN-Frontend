@@ -1,6 +1,8 @@
 # Dataless Network
 <!--![Dataless Network Logo](https://github.com/b-benjisoft/Dataless-Network/blob/master/Graphics/Logos/Logo.png?raw=true)-->
 
+[![buddy pipeline](https://app.buddy.works/benjisoft/dataless-network/pipelines/pipeline/147827/badge.svg?token=f6b94fb3831b481fef522eacccd5c9e2d90670bb6e0648b96aed710ab4ceaad3 "buddy pipeline")](https://app.buddy.works/benjisoft/dataless-network/pipelines/pipeline/147827)
+
 ## Inspiration
 Many people have limited access to the internet due to their rural location, lack of infrastructure, financial constraints, and even governmental censorship.
 Dataless Network was founded to provide an alternative; by utilising SMS - a network usually far more available both geographically and financially than 3G/4G, internet traffic can be requested and return all via standard text messages.
