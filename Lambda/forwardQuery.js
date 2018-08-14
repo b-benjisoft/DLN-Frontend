@@ -24,19 +24,17 @@ module.exports = {
                 let payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                     "Search Query": query}}
-                APIFunctions["Wikipedia"].execute(payload)}
+                APIFunctions["Wikipedia"].execute(payload);}
 
             case "news": {// Done Badly [Benji]
                 console.log("News Fire")
                 let payload = {"Phone Number": phoneNumber}
-                APIFunctions["News"].execute(payload)}
+                APIFunctions["News"].execute(payload);}
                 
             case "dictionary": {//define? Yes // To do
-                console.log("Dictionary Fire")
                 break;}
                 
             case "weather":{ // To Do
-                console.log("Weather Fire")
                 break;}
                 
             case "trains": { // To do [Benji]
@@ -50,11 +48,10 @@ module.exports = {
                 APIFunctions["Trains"].execute(payload); }
                 
             case "buses": {// To do
-                console.log("Busses fire")
                 break;}
                 
-            default: {
-                return "Invalid Function"}
+            default:
+                return "Invalid Function"
         }
     
     },
