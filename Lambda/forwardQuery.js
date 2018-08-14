@@ -19,23 +19,23 @@ module.exports = {
                                     "Target Language":       queryParameters[1]}}
                 APIFunctions["Translate"].execute(payload); }
                 
-            case "wikipedia": // Done [Bemmons]
+            case "wikipedia": {// Done [Bemmons]
                 console.log("Wikipedia fire")
                 var payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                     "Search Query": query}}
-                APIFunctions["Wikipedia"].execute(payload)
+                APIFunctions["Wikipedia"].execute(payload)}
 
-            case "news": // Done Badly [Benji]
+            case "news": {// Done Badly [Benji]
                 console.log("News Fire")
                 var payload = {"Phone Number": phoneNumber}
-                APIFunctions["News"].execute(payload)
+                APIFunctions["News"].execute(payload)}
                 
-            case "dictionary": //define? Yes // To do
-                break;
+            case "dictionary": {//define? Yes // To do
+                break;}
                 
-            case "weather": // To Do
-                break;
+            case "weather":{ // To Do
+                break;}
                 
             case "trains": { // To do [Benji]
                 console.log("Trains Fire")
@@ -47,8 +47,8 @@ module.exports = {
 
                 APIFunctions["Trains"].execute(payload); }
                 
-            case "buses": // To do
-                break;
+            case "buses": {// To do
+                break;}
                 
             default:
                 return "Invalid Function"
