@@ -10,40 +10,41 @@ const APIFunctions = {
 module.exports = {
     sort: function (intendedFunction, query, phoneNumber) {
         switch(intendedFunction) {
-            case "translate": {
-                let queryParameters = query.split(" to ")
-                let payload = {"Phone Number": phoneNumber,
+            case "translate": { // In Progress [Bemmons]
+                var queryParameters = query.split(" to ")
+                var payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                     "Untranslated Phrase":   queryParameters[0],
                                     "Target Language":       queryParameters[1]}}
 
                 APIFunctions["Translate"](payload); }
                 
-            case "wikipedia":
-                let payload = {"Phone Number": phoneNumber,
+            case "wikipedia": // Done [Bemmons]
+                var payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                     "Search Query": query}}
                 APIFunctions["Wikipedia"].execute(payload)
 
-            case "news":
+            case "news": // To do [Benji]
+                var payload = {"Phone Number": phoneNumber}
+                APIFunctions["News"].execute(payload)
+                
+            case "dictionary": //define? Yes // To do
                 break;
                 
-            case "dictionary": //define?
+            case "weather": // To Do
                 break;
                 
-            case "weather":
-                break;
-                
-            case "trains": {
-                let queryParameters = query.split(" to ")
-                let payload = {"Phone Number": phoneNumber,
+            case "trains": { // To do [Benji]
+                var queryParameters = query.split(" to ")
+                var payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                 "Origin Station":        queryParameters[0],
                                 "Destination Station":   queryParameters[1]}}
 
                 APIFunctions["Trains"](payload); }
                 
-            case "buses":
+            case "buses": // To do
                 break;
                 
             default:
