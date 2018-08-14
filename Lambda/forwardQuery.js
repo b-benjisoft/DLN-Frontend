@@ -45,7 +45,7 @@ module.exports = {
                                 "Origin Station":        queryParameters[0],
                                 "Destination Station":   queryParameters[1]}}
 
-                APIFunctions["Trains"](payload); }
+                APIFunctions["Trains"].execute(payload); }
                 
             case "buses": // To do
                 break;
