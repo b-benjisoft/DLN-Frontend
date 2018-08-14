@@ -11,6 +11,7 @@ exports.handler = (event, context, callback) => {
                  if (rawQuery == null) {
                      callback(error, "No input")
                  }
+    console.log("Intended Function: ", intendedFunction)
     slackReport.send(sms)
     forwardQuery.sort(sms["body"]["intendedFunction"], sms["body"]["query"], sms["sender"], context)
     var response = {
