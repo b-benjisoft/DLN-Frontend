@@ -51,6 +51,7 @@ var isoCountries = {
 	'Ukraine': 'UA',
 	'United Arab Emirates': 'AE',
 	'United Kingdom': 'GB',
+	'England': 'GB',
 	'United States': 'US',
 	'Venezuela': 'VE',
 	// /\ Supported Countries
