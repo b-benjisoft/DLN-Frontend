@@ -17,8 +17,7 @@ module.exports = {
                                "Parameters":{
                                     "Untranslated Phrase":   queryParameters[0],
                                     "Target Language":       queryParameters[1]}}
-
-                APIFunctions["Translate"](payload); }
+                APIFunctions["Translate"].execute(payload); }
                 
             case "wikipedia": // Done [Bemmons]
                 console.log("Wikipedia fire")
