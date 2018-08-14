@@ -251,10 +251,12 @@ var isoCountries = {
 	//'Zimbabwe': 'ZW'
 };
 
-function getCountryCode (countryName) {
-    if (isoCountries.hasOwnProperty(countryName)) {
-        return isoCountries[countryName];
-    } else {
-        return countryName;
-    }
+module.exports = {
+	getCountryCode = function (countryName) {
+		if (isoCountries.hasOwnProperty(countryName)) {
+			return isoCountries[countryName];
+		} else {
+			return countryName;
+		}
+	}
 }
