@@ -30,7 +30,11 @@ module.exports = {
 
             case "news": {// Done Badly [Benji]
                 console.log("News Fire")
-                let payload = {"Phone Number": phoneNumber}
+                let payload = {"Phone Number": phoneNumber,
+                                "Parameters":{
+                                    "Country Code": query
+                                }
+            }
                 APIFunctions["News"].getNews(payload);
                 break;
             }
