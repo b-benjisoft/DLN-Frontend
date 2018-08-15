@@ -5,7 +5,6 @@ function LanguageToCode(language){
         if (language == code["name"]){
             return code["code"]
         }
-        break;
     })
 }
 
