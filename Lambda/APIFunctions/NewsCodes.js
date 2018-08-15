@@ -61,7 +61,7 @@ module.exports = {
  
  
 		try {
-			return isoCountries[contryName];
+			return isoCountries[countryName];
 		} 
 		catch(error) {
 			console.log(error);
