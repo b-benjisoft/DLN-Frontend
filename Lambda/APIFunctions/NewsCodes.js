@@ -61,7 +61,9 @@ module.exports = {
  
  
 		try {
-			return isoCountries[countryName];
+			code = isoCountries[countryName];
+			console.log("NewsCodes Code", code)
+			return code;
 		} 
 		catch(error) {
 			console.log(error); // TODO: Add proper error sending to back to news to forwards to send function
