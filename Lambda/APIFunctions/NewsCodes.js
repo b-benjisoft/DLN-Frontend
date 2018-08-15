@@ -1,4 +1,3 @@
-
 module.exports = {
 	getCountryCode: function (countryName) {
 		var isoCountries = {
@@ -65,7 +64,7 @@ module.exports = {
 		} 
 		catch(error) {
 			throw("Invalid Country Code")
-			return countryName;
+			return "GB";
 		}
 	}
 }

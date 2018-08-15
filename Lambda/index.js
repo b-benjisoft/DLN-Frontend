@@ -8,7 +8,7 @@ exports.handler = (event, context, callback) => {
                              "query":            rawText[1]},
                  "sender":  rawQuery["msisdn"]};
     
-    console.log("Intended Function: ", sms["body"])
+    console.log("Query: ", sms["body"])
 
     console.log("Intended Function: ", sms["body"]["intendedFunction"])
     slackReport.send(sms)
