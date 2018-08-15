@@ -17,7 +17,6 @@ module.exports = {
             }
             console.log(description)
             Response.send(errorStatus, description, payload["Phone Number"]);
-            break;
         });
     }
 }
