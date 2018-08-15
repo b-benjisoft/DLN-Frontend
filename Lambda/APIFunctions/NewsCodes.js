@@ -64,7 +64,7 @@ module.exports = {
 		} 
 		catch(error) {
 			throw("Invalid Country Code")
-			return "GB";
+			return("GB");
 		}
 	}
 }
