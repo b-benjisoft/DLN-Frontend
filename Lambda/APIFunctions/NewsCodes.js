@@ -62,6 +62,7 @@ module.exports = {
  
 		try {
 			code = isoCountries[countryName];
+			console.log("NewsCodes Country", countryName)
 			console.log("NewsCodes Code", code)
 			return code;
 		} 
