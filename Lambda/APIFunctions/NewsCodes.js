@@ -64,7 +64,7 @@ module.exports = {
 			return isoCountries[countryName];
 		} 
 		catch(error) {
-			console.log(error);
+			console.log(error); // TODO: Add proper error sending to back to news to forwards to send function
 			return("GB");
 		}
 	}
