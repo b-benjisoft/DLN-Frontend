@@ -7,7 +7,9 @@ exports.handler = (event, context, callback) => {
     const sms = {"body":    {"intendedFunction": rawText[0],
                              "query":            rawText[1]},
                  "sender":  rawQuery["msisdn"]};
-                 
+    
+    console.log("Intended Function: ", sms["body"])
+
     console.log("Intended Function: ", sms["body"]["intendedFunction"])
     slackReport.send(sms)
     forwardQuery.sort(sms["body"]["intendedFunction"], sms["body"]["query"], sms["sender"], context)
