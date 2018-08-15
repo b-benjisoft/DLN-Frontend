@@ -57,11 +57,14 @@ module.exports = {
 			'England': 'GB',
 			'United States': 'US',
 			'Venezuela': 'VE'
-		};
+			};
 		
 		try {
-			return isoCountries[countryName];
-		} catch {
+			countryName = countryName.charAt(0).toUpperCase() + this.slice(1);
+			return isoCountries[contryName];
+		} 
+		catch(error) {
+			throw("Invalid Country Code")
 			return countryName;
 		}
 	}
