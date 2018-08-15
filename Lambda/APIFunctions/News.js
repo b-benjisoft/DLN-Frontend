@@ -21,7 +21,7 @@ module.exports = {
                 errorStatus = true;
             } else {
                 errorStatus = false;
-                description = JSON.parse(body)["articles"]["0"]["description"];
+                description = body["articles"]["0"]["description"];
             }
             console.log(description)
             Response.send(errorStatus, description, payload["Phone Number"]);
