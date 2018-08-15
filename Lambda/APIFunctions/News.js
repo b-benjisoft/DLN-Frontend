@@ -11,7 +11,7 @@ module.exports = {
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             console.log('body:', body); // Print the HTML for the Google homepage.
             let description = JSON.parse(body)["articles"]["0"]["description"]
-            if (response.statusCode != 200) {
+            if (response.totalResults == 0) {
                 var errorStatus = true
             } else {
                 var errorStatus = false
