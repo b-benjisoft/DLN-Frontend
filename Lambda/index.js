@@ -16,4 +16,4 @@ exports.handler = (event, context, callback) => {
         "isBase64Encoded": false
     };
     callback(null, response);
-};
+}
