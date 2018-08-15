@@ -10,15 +10,6 @@ const APIFunctions = {
 module.exports = {
     sort: function (intendedFunction, query, phoneNumber) {
         switch(intendedFunction) {
-            case "translate": { // In Progress [Bemmons]
-                let queryParameters = query.split(" to ");
-                let payload = {"Phone Number": phoneNumber,
-                               "Parameters":{
-                                    "Untranslated Phrase":   queryParameters[0],
-                                    "Target Language":       queryParameters[1]}};
-                APIFunctions["Translate"].getTranslation(payload); 
-                break;
-            }
                 
             case "wikipedia": {// Done [Bemmons]
                 let payload = {"Phone Number": phoneNumber,
