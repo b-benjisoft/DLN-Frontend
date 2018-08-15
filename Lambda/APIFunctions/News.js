@@ -4,6 +4,7 @@ const codes = require("./NewsCodes.js")
 
 module.exports = {
     getNews: function (payload) {
+        console.log("Country", payload["Parameters"]["Country Code"])
         ccode = codes.getCountryCode(payload["Parameters"]["Country Code"])
         console.log("Country Code", ccode)
         request('https://newsapi.org/v2/top-headlines?apiKey=c26b8ebdba81482e90d5b05d38336682&country=' + ccode, function (error, response, body) {
