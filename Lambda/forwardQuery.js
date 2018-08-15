@@ -32,7 +32,7 @@ module.exports = {
                 let payload = {"Phone Number": phoneNumber,
                                 "Parameters":{
                                     "Country Code": query
-                                };
+                                }
             }
                 APIFunctions["News"].getNews(payload);
                 break;
@@ -49,7 +49,7 @@ module.exports = {
                 let payload = {"Phone Number": phoneNumber,
                                "Parameters":{
                                 "Origin Station":        queryParameters[0],
-                                "Destination Station":   queryParameters[1];
+                                "Destination Station":   queryParameters[1]
                             }}
 
                 APIFunctions["Trains"].execute(payload); 
