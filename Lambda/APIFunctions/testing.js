@@ -1,5 +1,4 @@
-module.exports = {
-	getCountryCode: function (countryName) {
+function GetCode(countryName) {
 		var isoCountries = 
 		{
 			"argentina": "AR",
@@ -58,14 +57,10 @@ module.exports = {
 			"united states": "US",
 			"venezuela": "VE"
 		}
-		
-		code = isoCountries[countryName];
-		console.log("NewsCodes Country", countryName)
-		console.log("NewsCodes Code", code)
+ 
+ 
 
-		if (code == undefined){
-			return("GB")
-		}
-		return code;
-		}
+    code = isoCountries[countryName];
+    console.log(code)
 }
+GetCode("france")
