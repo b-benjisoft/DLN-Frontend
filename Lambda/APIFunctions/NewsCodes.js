@@ -1,6 +1,6 @@
 module.exports = {
 	getCountryCode: function (countryName) {
-		const isoCountries = require("./countryCodes.json")[0]
+		const isoCountries = require("./newsCodes.json")
 		console.log("isoCountries:", JSON.stringify(isoCountries));	
 		var code = isoCountries[countryName];
 		console.log("NewsCodes Country", countryName);
