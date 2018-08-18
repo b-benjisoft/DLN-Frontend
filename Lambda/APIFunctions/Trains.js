@@ -1,4 +1,4 @@
-const codes = require("./trainCodes.json")
+const codes = require("./stationCodes.json")
 
 function StationToCode(language){
     codes.forEach(function(code){
